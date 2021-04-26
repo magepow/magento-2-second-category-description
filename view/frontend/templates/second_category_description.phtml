@@ -1,0 +1,5 @@
+<?php 
+if ($_secondDescription = $block->getCurrentCategory()->getData('magepow_description')){
+	echo $this->helper('Magento\Catalog\Helper\Output')->categoryAttribute($block->getCurrentCategory(), $_secondDescription, 'magepow_description');
+}
+?>
